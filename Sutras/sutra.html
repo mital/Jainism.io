@@ -1,0 +1,44 @@
+﻿<div ui-content-for="title">
+    <span>{{content_title}}</span>
+</div>
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class='section'>
+            <ui-state id='activeTab' default='1'></ui-state>
+            <ul class="nav nav-tabs">
+                <li ui-class="{'active': activeTab == 1}">
+                    <a ui-set="{'activeTab': 1}">Gujrati</a>
+                </li>
+                <li ui-class="{'active': activeTab == 2}">
+                    <a ui-set="{'activeTab': 2}">Hindi</a>
+                </li>
+                <li ui-class="{'active': activeTab == 3}">
+                    <a ui-set="{'activeTab': 3}">English</a>
+                </li>
+            </ul>
+            <div ui-if="activeTab == 1">
+                <!--<h3 class="page-header">Gujrati</h3>-->
+                <h3 class="page-header"></h3>
+                <p>{{content_gujrati}}</p>
+            </div>
+            <div ui-if="activeTab == 2">
+                <!--<h3 class="page-header">Hindi</h3>-->
+                <h3 class="page-header"></h3>
+                <p>{{content_hindi}}</p>
+            </div>
+            <div ui-if="activeTab == 3">
+                <!--<h3 class="page-header">English</h3>-->
+                <h3 class="page-header"></h3>
+                <p>{{content_english}}</p>
+            </div>
+            <!--<div class="btn-group justified nav-tabs">
+                <a ui-set="{'activeTab': 1}"
+                   ui-class="{'active': activeTab == 1}" class="btn btn-default">Gujrati</a>
+                <a ui-set="{'activeTab': 2}"
+                   ui-class="{'active': activeTab == 2}" class="btn btn-default">Hindi</a>
+                <a ui-set="{'activeTab': 3}"
+                   ui-class="{'active': activeTab == 3}" class="btn btn-default">English</a>
+            </div>-->
+        </div>
+    </div>
+</div>

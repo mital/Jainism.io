@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sutras xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sutra>
+    <id>1</id>
+    <title_gujrati>1_Guj_Title</title_gujrati>
+    <title_hindi>1_Hin_Title</title_hindi>
+    <title_english>1_Eng_Title</title_english>
+    <content_gujrati>1_Guj_Content</content_gujrati>
+    <content_hindi>1_Hin_Content</content_hindi>
+    <content_english>1_Eng_Content</content_english>
+  </sutra>
+
+  <sutra>
+    <id>2</id>
+    <title_gujrati>2_Guj_Title</title_gujrati>
+    <title_hindi>2_Hin_Title</title_hindi>
+    <title_english>2_Eng_Title</title_english>
+    <content_gujrati>2_Guj_Content</content_gujrati>
+    <content_hindi>2_Hin_Content</content_hindi>
+    <content_english>2_Eng_Content</content_english>
+  </sutra>
+
+  <sutra>
+    <id>3</id>
+    <title_gujrati>3_Guj_Title</title_gujrati>
+    <title_hindi>3_Hin_Title</title_hindi>
+    <title_english>3_Eng_Title</title_english>
+    <content_gujrati>3_Guj_Content</content_gujrati>
+    <content_hindi>3_Hin_Content</content_hindi>
+    <content_english>3_Eng_Content</content_english>
+  </sutra>
+
+</sutras>
+
