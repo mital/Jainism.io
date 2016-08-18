@@ -1,5 +1,5 @@
-﻿<div ui-content-for="title">
-    <span>{{content_title}}</span>
+<div ui-content-for="title">
+    <span>{{content_id}}</span>
 </div>
 <div class="scrollable">
     <div class="scrollable-content">
@@ -31,14 +31,14 @@
                 <h3 class="page-header"></h3>
                 <p>{{content_english}}</p>
             </div>
-            <!--<div class="btn-group justified nav-tabs">
+            <div class="btn-group justified nav-tabs">
                 <a ui-set="{'activeTab': 1}"
-                   ui-class="{'active': activeTab == 1}" class="btn btn-default">Gujrati</a>
+                   ui-class="{'active': activeTab == 1}" class="btn btn-default">{{title_gujrati}}</a>
                 <a ui-set="{'activeTab': 2}"
-                   ui-class="{'active': activeTab == 2}" class="btn btn-default">Hindi</a>
+                   ui-class="{'active': activeTab == 2}" class="btn btn-default">{{title_hindi}}</a>
                 <a ui-set="{'activeTab': 3}"
-                   ui-class="{'active': activeTab == 3}" class="btn btn-default">English</a>
-            </div>-->
+                   ui-class="{'active': activeTab == 3}" class="btn btn-default">{{title_english}}</a>
+            </div>
         </div>
     </div>
 </div>
