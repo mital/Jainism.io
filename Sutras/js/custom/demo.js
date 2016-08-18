@@ -241,7 +241,7 @@ app.directive('dragMe', ['$drag', function ($drag) {
 
 // For this trivial demo we have just a unique MainController 
 // for everything
-app.controller('MainController', function ($rootScope, $scope) {
+app.controller('MainController', function ($rootScope, $scope,$http) {
 
     $scope.swiped = function (direction) {
         alert('Swiped ' + direction);
@@ -326,6 +326,37 @@ app.controller('MainController', function ($rootScope, $scope) {
             $scope.notices.splice(index, 1);
         }
     };
+    
+    //code for initializing array for all sutra
+	//get all sutra from xml and convert into json object then using for loop initialize array.
+
+	$scope.sutras = {};
+	debugger;
+	$http.get("xml/sutra.xml",
+		{
+			transformResponse: function (cnv) {
+				var x2js = new X2JS();
+				var aftCnv = x2js.xml_str2json(cnv);
+				return aftCnv;
+			}
+		})
+	.success(function (response) {
+		console.log(response);
+
+		if (response.sutras != null && response.sutras.sutra != null && response.sutras.sutra.length > 0)
+			for (var i = 0; i < response.sutras.sutra.length; i++) {
+				var oSutra = new Object();
+				oSutra.id = response.sutras.sutra[i].id;
+				oSutra.title_gujrati = response.sutras.sutra[i].title_gujrati;
+				oSutra.title_hindi = response.sutras.sutra[i].title_hindi;
+				oSutra.title_english = response.sutras.sutra[i].title_english;
+				oSutra.content_gujrati = response.sutras.sutra[i].content_gujrati;
+				oSutra.content_hindi = response.sutras.sutra[i].content_hindi;
+				oSutra.content_english = response.sutras.sutra[i].content_english;
+
+				$scope.sutras[i] = oSutra;
+			}
+	});
 });
 
 
@@ -343,10 +374,14 @@ app.controller('MainController', function ($rootScope, $scope) {
 
 app.controller('ShowSutraController', function ($scope, $routeParams) {
 
-    $scope.sutra_id = $routeParams.id;
+  var CurrentSutraID = $routeParams.id - 1;
+	$scope.content_id = $scope.sutras[CurrentSutraID].content_id;
 
-    $scope.content_title = "Sutra Title";
-    $scope.content_gujrati = "Sutra Gujrati Content";
-    $scope.content_hindi = "Sutra Hindi Content";
-    $scope.content_english = "Sutra English Content";
+	$scope.title_gujrati = $scope.sutras[CurrentSutraID].title_gujrati;
+	$scope.title_hindi = $scope.sutras[CurrentSutraID].title_hindi;
+	$scope.title_english = $scope.sutras[CurrentSutraID].title_english;
+
+	$scope.content_gujrati = $scope.sutras[CurrentSutraID].content_gujrati;
+	$scope.content_hindi = $scope.sutras[CurrentSutraID].content_hindi;
+	$scope.content_english = $scope.sutras[CurrentSutraID].content_english
 });
