@@ -20,5 +20,9 @@
             <a class="list-group-item" href="#/sutra/2">Sutra2<i class="fa fa-chevron-right pull-right"></i></a>
             <a class="list-group-item" href="#/sutra/3">Sutra3<i class="fa fa-chevron-right pull-right"></i></a>
         </div>
+        
+        <div ng-repeat="objsutra in sutras">
+			<a class="list-group-item" ng-href="#/sutra/{{objsutra.id}}">{{objsutra.title_gujrati}}<i class="fa fa-chevron-right pull-right"></i></a>
+		</div>
     </div>
 </div>
