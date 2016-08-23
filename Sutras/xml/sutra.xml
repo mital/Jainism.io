@@ -3,12 +3,36 @@
 <sutras xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sutra>
     <id>1</id>
-    <title_gujrati>1_Guj_Title</title_gujrati>
-    <title_hindi>1_Hin_Title</title_hindi>
-    <title_english>1_Eng_Title</title_english>
-    <content_gujrati>1_Guj_Content</content_gujrati>
-    <content_hindi>1_Hin_Content</content_hindi>
-    <content_english>1_Eng_Content</content_english>
+    <title_gujrati>नवकार (णमोकार) मंत्र</title_gujrati>
+    <title_hindi>नवकार (णमोकार) मंत्र</title_hindi>
+    <title_english>Navkar Mantra</title_english>
+    <content_gujrati>णमो अरिहंताणं
+णमो सिद्धाणं
+णमो आयरियाणं
+णमो उवज्झायाणं
+णमो लोए सव्व साहूणं
+एसोपंचणमोक्कारो
+सव्वपावप्पणासणो
+मंगला णं च सव्वेसिं
+पडमम हवई मंगलं</content_gujrati>
+    <content_hindi>णमो अरिहंताणं
+णमो सिद्धाणं
+णमो आयरियाणं
+णमो उवज्झायाणं
+णमो लोए सव्व साहूणं
+एसोपंचणमोक्कारो
+सव्वपावप्पणासणो
+मंगला णं च सव्वेसिं
+पडमम हवई मंगलं</content_hindi>
+    <content_english>Namo Arihantanam
+Namo Siddhanam
+Namo ayariyanam
+Namo Uvajjhayanam
+Namo Loe Savva sahunam
+Esopancanamokkaro
+savvapavappanasano
+Mangalanam cha savvesim
+padamama havai mangalam</content_english>
   </sutra>
 
   <sutra>
